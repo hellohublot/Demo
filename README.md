@@ -1,6 +1,6 @@
 #iOS
 * 仿天猫
-    ![](/iOS/Tmall/1.png){:height="100" width="100"}![](/iOS/Tmall/2.png){:width="100"}![](/iOS/Tmall/3.png){:width="100"}![](/iOS/Tmall/4.png){:width="100"}![](/iOS/Tmall/5.png){:width="100"}
+    <img style="width:50px; height:50px" src="/iOS/Tmall/1.png" />![](/iOS/Tmall/2.png){:width="100"}![](/iOS/Tmall/3.png){:width="100"}![](/iOS/Tmall/4.png){:width="100"}![](/iOS/Tmall/5.png){:width="100"}
 * 仿网易云音乐
     ![](/iOS/Music163/1.png)![](/iOS/Music163/2.png)![](/iOS/Music163/3.png)![](/iOS/Music163/4.png)![](/iOS/Music163/5.png)![](/iOS/Music163/6.png)![](/iOS/Music163/7.png)
 * 仿考满分GMAT
