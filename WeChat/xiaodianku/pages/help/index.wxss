@@ -1,0 +1,105 @@
+.header {
+	background: #f64235;
+	height: 100rpx;
+	text-align: center;
+	margin-bottom: 150rpx;
+}
+
+.header .image {
+	position: absolute;
+	top: -140rpx;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.header image {
+	width: 120rpx;
+}
+
+.text {
+	text-align: center;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.text .title {
+	display: block;
+	font-size: 42rpx;
+	margin-bottom: 50rpx;
+}
+
+.text .detail {
+	font-size: 26rpx;
+	line-height: 42rpx;
+	color: #666;
+}
+
+.text .detail .detail-light {
+	color: #f64235;
+}
+
+.moneylist .itembackground {
+	width: 33%;
+	height: 120rpx;
+	display: inline-block;
+}
+
+.moneylist {
+	max-width: 90%;
+	margin: 0 auto;
+	margin-top: 50rpx;
+}
+
+.moneyitem {
+	margin: 10rpx 10rpx;
+	background: rgba(246,66,53,.07);
+	border-radius: 3rpx;
+	overflow: hidden;
+}
+
+.moneyitem .title {
+	font-size: 30rpx;
+	line-height: 30rpx;
+	display: block;
+	margin-top: 20rpx;
+}
+
+.moneyitem .detail {
+	margin-top: 10rpx;
+	margin-bottom: 20rpx;
+	display: block;
+	font-size: 26rpx;
+	line-height: 26rpx;
+	color: #666;
+}
+
+
+
+
+.footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 60rpx;
+	text-align: center;
+}
+
+.userlist .itembackground {
+	display: inline-block;
+	width: 56rpx;
+}
+
+.useritem {
+	width: 60rpx;
+	height: 60rpx;
+	border: 2rpx solid #fff;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+
+.moneytotal {
+	font-size: 30rpx;
+	color: #777;
+}

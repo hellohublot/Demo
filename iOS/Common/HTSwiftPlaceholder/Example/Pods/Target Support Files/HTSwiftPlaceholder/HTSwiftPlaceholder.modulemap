@@ -1,0 +1,6 @@
+framework module HTSwiftPlaceholder {
+  umbrella header "HTSwiftPlaceholder-umbrella.h"
+
+  export *
+  module * { export * }
+}

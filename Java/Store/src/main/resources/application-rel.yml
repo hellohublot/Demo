@@ -1,0 +1,5 @@
+server:
+  ssl:
+    key-store: /home/work/server.p12
+    key-store-password: #password
+    key-store-type: PKCS12

@@ -1,0 +1,35 @@
+<view class='header'>
+	<view class='image'>
+		<image src='/resource/images/other/coffee-cup.svg'></image>
+	</view>
+</view>
+<view class='text'>
+	<text class='title'>为什么要赞助开发者</text>
+	<text class='detail'>小电库作为一款免费的库存管理工具，为了得到更好的长远发展以及开发者可投入更多的时间维护迭代，赞助开发者可有效提高工具服务质量。<text class="detail-light">赞助用户未来将可获得工具新功能优先体验权。</text>
+	</text>
+</view>
+<view class='moneylist'>
+	<block wx:for="{{data}}" wx:key="key">
+		<view class='itembackground'>
+			<button class='moneyitem'>
+				<text class='title'>{{item.goods}}</text>
+				<text class='detail'>{{item.money}}元</text>
+			</button>
+		</view>
+	</block>
+</view>
+
+<view class='footer'>
+	<view class='userlist'>
+		<block wx:for="{{user.list}}" wx:key="">
+			<view class='itembackground'>
+				<view class='useritem'>
+					<image src='{{item.avatarurl}}'></image>
+				</view>
+			</view>
+		</block>
+	</view>
+	<view class='moneytotal'>
+		<text>已收到 {{user.total}} 杯咖啡</text>
+	</view>
+</view>

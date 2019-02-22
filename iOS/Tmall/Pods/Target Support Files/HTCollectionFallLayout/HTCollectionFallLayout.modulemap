@@ -1,0 +1,6 @@
+framework module HTCollectionFallLayout {
+  umbrella header "HTCollectionFallLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

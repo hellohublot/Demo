@@ -1,0 +1,39 @@
+PODS:
+  - HTButton (0.1.0)
+  - HTScrollPageView (0.1.0)
+  - HTSwift (1.2.7)
+  - RTRootNavigationController (0.6.7):
+    - RTRootNavigationController/Core (= 0.6.7)
+  - RTRootNavigationController/Core (0.6.7)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - HTButton (from `../Common/HTButton`)
+  - HTScrollPageView (from `../Common/HTScrollPageView`)
+  - HTSwift (from `../Common/HTSwift`)
+  - RTRootNavigationController
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RTRootNavigationController
+    - SnapKit
+
+EXTERNAL SOURCES:
+  HTButton:
+    :path: "../Common/HTButton"
+  HTScrollPageView:
+    :path: "../Common/HTScrollPageView"
+  HTSwift:
+    :path: "../Common/HTSwift"
+
+SPEC CHECKSUMS:
+  HTButton: 6e3781f434707b88125b9e05d65497f74fd27fe3
+  HTScrollPageView: cb5fe060fccb694c580823bd2dfab2e10a697730
+  HTSwift: 801d29b53a61c3a83f971229b2b982c22e4d49c1
+  RTRootNavigationController: d6aa6cbb78a3eaecea4f6e4df63f15dd887836b8
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: 9caeeb91a151dd4cc488cf27c80507415812498e
+
+COCOAPODS: 1.5.3

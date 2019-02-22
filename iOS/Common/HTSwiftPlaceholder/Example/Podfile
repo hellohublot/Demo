@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'HTSwiftPlaceholder_Example' do
+	pod 'HTSwift', :path => '../../HTSwift/'
+  	pod 'HTSwiftPlaceholder', :path => '../'
+end

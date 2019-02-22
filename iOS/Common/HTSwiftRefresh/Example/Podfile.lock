@@ -1,0 +1,25 @@
+PODS:
+  - HTSwift (1.2.5)
+  - HTSwiftRefresh (0.1.0):
+    - HTSwift
+    - MJRefresh (~> 3.1.15)
+  - MJRefresh (3.1.15.1)
+
+DEPENDENCIES:
+  - HTSwift (from `../../HTSwift/`)
+  - HTSwiftRefresh (from `../`)
+
+EXTERNAL SOURCES:
+  HTSwift:
+    :path: ../../HTSwift/
+  HTSwiftRefresh:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HTSwift: 30877502de4a1afbca5390321ba469e8882d4200
+  HTSwiftRefresh: 7f58409aa418cd870ea874e59bdc3d1c2dce1375
+  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
+
+PODFILE CHECKSUM: 1e3f197740d1dee751039ccc3faf4c13708b6885
+
+COCOAPODS: 1.4.0

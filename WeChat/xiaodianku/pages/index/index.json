@@ -1,0 +1,7 @@
+{
+	"enablePullDownRefresh": true,
+	"navigationBarTitleText": "选择电库",
+	"usingComponents": {
+		"van-icon": "../../resource/dist/icon/index"
+	}
+}

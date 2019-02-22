@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 200Mb
+      max-request-size: 200Mb
+  thymeleaf:
+    cache: false
+server:
+  port: 8080

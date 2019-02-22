@@ -1,0 +1,47 @@
+<view class='header'>
+	<view class='image'>
+		<image src='https://wx.qlogo.cn/mmopen/vi_32/Dibeico9wDRCmTEbRXZ7CRWWdoxKDKcpx8QkqvAyWPEsGwFn5mmbaAMHdDShQs1gibfdV5FrqrNIZfMBRqmCrYZtg/132'>
+		</image>
+		<view class='bottom'>
+			<text>自</text>
+		</view>
+	</view>
+	<view class='text'>
+		<view class='title'>hublot</view>
+		<view class='detail'>终身免费用户</view>
+	</view>
+</view>
+<view class='countlist'>
+	<block wx:for="{{countList}}" wx:key="key">
+		<view class='itembackground'>
+			<view class='countitem'>
+				<text class='title'>{{item.count}}</text>
+				<text class='detail'>{{item.name}}</text>
+			</view>
+		</view>
+	</block>
+</view>
+<view class='menulist'>
+	<block wx:for="{{menuList}}" wx:key="key">
+		<view class='itembackground'>
+			<view class='menuitem' bindtap='selectedMenu' data-item='{{item}}'>
+				<view class='image'>
+					<image class='image' src='{{item.image}}' model='aspectFit'></image>
+				</view>
+				<text class='text'>{{item.name}}</text>
+			</view>
+		</view>
+	</block>
+</view>
+<view class='version'>小电库 v1.6.3</view>
+<view class='help' bindtap='selectedHelp'>
+	<view class='head'>
+		<image src='/resource/images/other/coffee-cup.svg'></image>
+	</view>
+	<view class='text'>
+		<text class='title'>给开发者赞助一杯咖啡</text>
+		<text class='detail'>
+			<text class='detail-button'>打赏</text>点赞是一种美意, 打赏是一种鼓励
+		</text>
+	</view>
+</view>

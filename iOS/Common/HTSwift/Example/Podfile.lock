@@ -1,0 +1,16 @@
+PODS:
+  - HTSwift (1.2.5)
+
+DEPENDENCIES:
+  - HTSwift (from `../`)
+
+EXTERNAL SOURCES:
+  HTSwift:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HTSwift: 30877502de4a1afbca5390321ba469e8882d4200
+
+PODFILE CHECKSUM: 0a9f782b06905b37f3aac1801d378ff8924ea89d
+
+COCOAPODS: 1.4.0

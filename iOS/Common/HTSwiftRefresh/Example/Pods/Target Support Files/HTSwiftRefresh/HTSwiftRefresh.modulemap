@@ -1,0 +1,6 @@
+framework module HTSwiftRefresh {
+  umbrella header "HTSwiftRefresh-umbrella.h"
+
+  export *
+  module * { export * }
+}

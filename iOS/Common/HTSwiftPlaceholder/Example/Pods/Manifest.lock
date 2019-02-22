@@ -1,0 +1,22 @@
+PODS:
+  - HTSwift (1.2.5)
+  - HTSwiftPlaceholder (0.1.0):
+    - HTSwift
+
+DEPENDENCIES:
+  - HTSwift (from `../../HTSwift/`)
+  - HTSwiftPlaceholder (from `../`)
+
+EXTERNAL SOURCES:
+  HTSwift:
+    :path: ../../HTSwift/
+  HTSwiftPlaceholder:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HTSwift: 30877502de4a1afbca5390321ba469e8882d4200
+  HTSwiftPlaceholder: 4563779a1ee12d45eaa6a639b4e19ae38f6d7d92
+
+PODFILE CHECKSUM: 094b29823473e6c957effbd32605ea4c3b9f53fe
+
+COCOAPODS: 1.4.0

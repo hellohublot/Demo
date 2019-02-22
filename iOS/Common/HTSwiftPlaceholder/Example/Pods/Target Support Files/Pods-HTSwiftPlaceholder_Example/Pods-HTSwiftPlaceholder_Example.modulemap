@@ -1,0 +1,6 @@
+framework module Pods_HTSwiftPlaceholder_Example {
+  umbrella header "Pods-HTSwiftPlaceholder_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

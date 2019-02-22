@@ -1,0 +1,910 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E05F6B6827DB91AFD5E6835 /* Pods_KGMAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF53A6D3C78B1262A40A94B3 /* Pods_KGMAT.framework */; };
+		C21382CA21B4FD5700FA5414 /* HTCourseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21382C921B4FD5700FA5414 /* HTCourseController.swift */; };
+		C21382CC21B4FD6100FA5414 /* HTQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21382CB21B4FD6100FA5414 /* HTQuestionController.swift */; };
+		C21382CE21B4FD6A00FA5414 /* HTExerciseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21382CD21B4FD6A00FA5414 /* HTExerciseController.swift */; };
+		C21382D021B4FD7100FA5414 /* HTMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21382CF21B4FD7100FA5414 /* HTMineController.swift */; };
+		C25E24A121B81F69007EABE8 /* HTExerciseQuestionPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25E24A021B81F69007EABE8 /* HTExerciseQuestionPageModel.swift */; };
+		C25E24A321B81F77007EABE8 /* HTExerciseQuestionItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25E24A221B81F77007EABE8 /* HTExerciseQuestionItemModel.swift */; };
+		C299BC2621B4F58C00D3EA45 /* HTNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299BC1521B4F58C00D3EA45 /* HTNavigationController.swift */; };
+		C299BC2721B4F58C00D3EA45 /* HTTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299BC1821B4F58C00D3EA45 /* HTTabbarController.swift */; };
+		C299BC2821B4F58C00D3EA45 /* HTTabbarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299BC1A21B4F58C00D3EA45 /* HTTabbarModel.swift */; };
+		C299BC2921B4F58C00D3EA45 /* HTStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299BC1C21B4F58C00D3EA45 /* HTStatic.swift */; };
+		C299BC2A21B4F58C00D3EA45 /* Appdelegate+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299BC1E21B4F58C00D3EA45 /* Appdelegate+Register.swift */; };
+		C299BC2B21B4F58C00D3EA45 /* Appdelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299BC1F21B4F58C00D3EA45 /* Appdelegate.swift */; };
+		C299BC2C21B4F58C00D3EA45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C299BC2121B4F58C00D3EA45 /* Assets.xcassets */; };
+		C299BC2D21B4F58C00D3EA45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C299BC2221B4F58C00D3EA45 /* LaunchScreen.storyboard */; };
+		C29A514A21B7D07200020351 /* HTExerciseCountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A514921B7D07200020351 /* HTExerciseCountCell.swift */; };
+		C29A514C21B7D09200020351 /* HTExerciseCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A514B21B7D09200020351 /* HTExerciseCountModel.swift */; };
+		C29A514E21B7D0C200020351 /* HTExerciseQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A514D21B7D0C200020351 /* HTExerciseQuestionModel.swift */; };
+		C29A515021B7D0F900020351 /* HTExerciseHardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A514F21B7D0F900020351 /* HTExerciseHardModel.swift */; };
+		C29A515221B7D11200020351 /* HTExerciseGuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A515121B7D11200020351 /* HTExerciseGuideModel.swift */; };
+		C29A515421B7D3B100020351 /* HTExerciseBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A515321B7D3B100020351 /* HTExerciseBackgroundView.swift */; };
+		C29A515621B7D82200020351 /* HTExerciseQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A515521B7D82200020351 /* HTExerciseQuestionCell.swift */; };
+		C29A515821B7D83F00020351 /* HTExerciseHardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A515721B7D83F00020351 /* HTExerciseHardCell.swift */; };
+		C29A515A21B7D84C00020351 /* HTExerciseGuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A515921B7D84C00020351 /* HTExerciseGuideCell.swift */; };
+		C29A515C21B7E46900020351 /* HTExerciseSignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A515B21B7E46900020351 /* HTExerciseSignButton.swift */; };
+		C29A516221B7EC1C00020351 /* HTExerciseQuestionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A516121B7EC1C00020351 /* HTExerciseQuestionHeaderCell.swift */; };
+		C29A516421B7EC2C00020351 /* HTExerciseQuestionContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A516321B7EC2C00020351 /* HTExerciseQuestionContentCell.swift */; };
+		C29A516621B7F0E800020351 /* HTExerciseQuestionContentItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A516521B7F0E800020351 /* HTExerciseQuestionContentItemCell.swift */; };
+		C29BD3BA21B68127002CD66A /* HTCourseCircleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3B921B68127002CD66A /* HTCourseCircleModel.swift */; };
+		C29BD3BC21B68205002CD66A /* HTCourseReplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3BB21B68205002CD66A /* HTCourseReplayModel.swift */; };
+		C29BD3BE21B68218002CD66A /* HTCourseLiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3BD21B68218002CD66A /* HTCourseLiveModel.swift */; };
+		C29BD3C021B6828C002CD66A /* HTCourseGradeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3BF21B6828C002CD66A /* HTCourseGradeModel.swift */; };
+		C29BD3C221B682C0002CD66A /* HTCourseStoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3C121B682C0002CD66A /* HTCourseStoryModel.swift */; };
+		C29BD3C421B68C0A002CD66A /* HTCourseServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3C321B68C0A002CD66A /* HTCourseServiceModel.swift */; };
+		C29BD3C621B69A42002CD66A /* HTCourseCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3C521B69A42002CD66A /* HTCourseCircleView.swift */; };
+		C29BD3C821B69A55002CD66A /* HTCourseCircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3C721B69A55002CD66A /* HTCourseCircleCell.swift */; };
+		C29BD3CA21B69A6C002CD66A /* HTCourseReplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3C921B69A6C002CD66A /* HTCourseReplayView.swift */; };
+		C29BD3CC21B69A90002CD66A /* HTCourseSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3CB21B69A90002CD66A /* HTCourseSectionHeaderView.swift */; };
+		C29BD3CE21B69AA3002CD66A /* HTCourseOpenHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3CD21B69AA3002CD66A /* HTCourseOpenHeaderView.swift */; };
+		C29BD3D021B69AC0002CD66A /* HTCourseReplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3CF21B69AC0002CD66A /* HTCourseReplayCell.swift */; };
+		C29BD3D221B69AF0002CD66A /* HTCourseLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3D121B69AF0002CD66A /* HTCourseLiveCell.swift */; };
+		C29BD3D421B69B13002CD66A /* HTCourseLiveFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3D321B69B13002CD66A /* HTCourseLiveFooterView.swift */; };
+		C29BD3D621B69B30002CD66A /* HTCourseGradeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3D521B69B30002CD66A /* HTCourseGradeCell.swift */; };
+		C29BD3D821B69B44002CD66A /* HTCourseStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3D721B69B44002CD66A /* HTCourseStoryCell.swift */; };
+		C29BD3DA21B69B60002CD66A /* HTCourseStoryFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BD3D921B69B60002CD66A /* HTCourseStoryFooterView.swift */; };
+		C2A0127321B507E8006771E2 /* HTQuestionStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0127221B507E8006771E2 /* HTQuestionStoreModel.swift */; };
+		C2A0127521B50AED006771E2 /* HTQuestionSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0127421B50AED006771E2 /* HTQuestionSectionModel.swift */; };
+		C2A0127721B50B6F006771E2 /* HTQuestionStoreHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0127621B50B6F006771E2 /* HTQuestionStoreHeaderView.swift */; };
+		C2A0127921B50B7F006771E2 /* HTQuestionStoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0127821B50B7F006771E2 /* HTQuestionStoreCell.swift */; };
+		C2A0129B21B5490A006771E2 /* HTQuestionNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0129A21B5490A006771E2 /* HTQuestionNavigationBar.swift */; };
+		C2A0129D21B5632C006771E2 /* HTMineSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0129C21B5632C006771E2 /* HTMineSectionModel.swift */; };
+		C2A0129F21B56347006771E2 /* HTMineBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0129E21B56347006771E2 /* HTMineBannerModel.swift */; };
+		C2A012A321B563F1006771E2 /* HTMineRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012A221B563F1006771E2 /* HTMineRecordModel.swift */; };
+		C2A012A521B5650D006771E2 /* HTMineRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012A421B5650D006771E2 /* HTMineRecordCell.swift */; };
+		C2A012A721B58115006771E2 /* HTMineCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012A621B58115006771E2 /* HTMineCountModel.swift */; };
+		C2A012A921B58127006771E2 /* HTMineBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012A821B58127006771E2 /* HTMineBannerCell.swift */; };
+		C2A012AB21B58144006771E2 /* HTMineCountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012AA21B58144006771E2 /* HTMineCountCell.swift */; };
+		C2A012AD21B58169006771E2 /* HTMineUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012AC21B58169006771E2 /* HTMineUserCell.swift */; };
+		C2A012AF21B5826C006771E2 /* HTMineUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012AE21B5826C006771E2 /* HTMineUserModel.swift */; };
+		C2A012B121B58318006771E2 /* HTMineCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012B021B58318006771E2 /* HTMineCountView.swift */; };
+		C2A012B321B58C6E006771E2 /* HTMineUserCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012B221B58C6E006771E2 /* HTMineUserCircleView.swift */; };
+		C2A012B521B58CFF006771E2 /* HTMineUserCircleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012B421B58CFF006771E2 /* HTMineUserCircleModel.swift */; };
+		C2A012B921B599E7006771E2 /* HTCourseSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012B821B599E7006771E2 /* HTCourseSectionModel.swift */; };
+		C2A012BB21B59A22006771E2 /* HTExerciseSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012BA21B59A22006771E2 /* HTExerciseSectionModel.swift */; };
+		C2A012BD21B59A38006771E2 /* HTExerciseSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012BC21B59A38006771E2 /* HTExerciseSectionHeaderView.swift */; };
+		C2A012C121B59B80006771E2 /* HTCourseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012C021B59B80006771E2 /* HTCourseNavigationBar.swift */; };
+		C2A012C321B59B8E006771E2 /* HTCourseBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012C221B59B8E006771E2 /* HTCourseBackgroundView.swift */; };
+		C2A012C521B5A024006771E2 /* HTCourseServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A012C421B5A024006771E2 /* HTCourseServiceCell.swift */; };
+		C2C4FC4621B6373500D1C5E7 /* HTExerciseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4FC4521B6373500D1C5E7 /* HTExerciseNavigationBar.swift */; };
+		C2EA196E21B6E1C700033FA7 /* HTCourseGradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA196D21B6E1C700033FA7 /* HTCourseGradeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62BA10D51DA473450A06E8BC /* Pods-KGMAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KGMAT.release.xcconfig"; path = "Pods/Target Support Files/Pods-KGMAT/Pods-KGMAT.release.xcconfig"; sourceTree = "<group>"; };
+		C21382C921B4FD5700FA5414 /* HTCourseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseController.swift; sourceTree = "<group>"; };
+		C21382CB21B4FD6100FA5414 /* HTQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTQuestionController.swift; sourceTree = "<group>"; };
+		C21382CD21B4FD6A00FA5414 /* HTExerciseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseController.swift; sourceTree = "<group>"; };
+		C21382CF21B4FD7100FA5414 /* HTMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineController.swift; sourceTree = "<group>"; };
+		C25E24A021B81F69007EABE8 /* HTExerciseQuestionPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseQuestionPageModel.swift; sourceTree = "<group>"; };
+		C25E24A221B81F77007EABE8 /* HTExerciseQuestionItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseQuestionItemModel.swift; sourceTree = "<group>"; };
+		C299BBEE21B4F41F00D3EA45 /* KGMAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGMAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C299BC1521B4F58C00D3EA45 /* HTNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTNavigationController.swift; sourceTree = "<group>"; };
+		C299BC1821B4F58C00D3EA45 /* HTTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTabbarController.swift; sourceTree = "<group>"; };
+		C299BC1A21B4F58C00D3EA45 /* HTTabbarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTabbarModel.swift; sourceTree = "<group>"; };
+		C299BC1C21B4F58C00D3EA45 /* HTStatic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTStatic.swift; sourceTree = "<group>"; };
+		C299BC1E21B4F58C00D3EA45 /* Appdelegate+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Appdelegate+Register.swift"; sourceTree = "<group>"; };
+		C299BC1F21B4F58C00D3EA45 /* Appdelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appdelegate.swift; sourceTree = "<group>"; };
+		C299BC2121B4F58C00D3EA45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C299BC2321B4F58C00D3EA45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C299BC2421B4F58C00D3EA45 /* KGMAT-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KGMAT-Bridging-Header.h"; sourceTree = "<group>"; };
+		C299BC2521B4F58C00D3EA45 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C29A514921B7D07200020351 /* HTExerciseCountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseCountCell.swift; sourceTree = "<group>"; };
+		C29A514B21B7D09200020351 /* HTExerciseCountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseCountModel.swift; sourceTree = "<group>"; };
+		C29A514D21B7D0C200020351 /* HTExerciseQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseQuestionModel.swift; sourceTree = "<group>"; };
+		C29A514F21B7D0F900020351 /* HTExerciseHardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseHardModel.swift; sourceTree = "<group>"; };
+		C29A515121B7D11200020351 /* HTExerciseGuideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseGuideModel.swift; sourceTree = "<group>"; };
+		C29A515321B7D3B100020351 /* HTExerciseBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseBackgroundView.swift; sourceTree = "<group>"; };
+		C29A515521B7D82200020351 /* HTExerciseQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseQuestionCell.swift; sourceTree = "<group>"; };
+		C29A515721B7D83F00020351 /* HTExerciseHardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseHardCell.swift; sourceTree = "<group>"; };
+		C29A515921B7D84C00020351 /* HTExerciseGuideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseGuideCell.swift; sourceTree = "<group>"; };
+		C29A515B21B7E46900020351 /* HTExerciseSignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseSignButton.swift; sourceTree = "<group>"; };
+		C29A516121B7EC1C00020351 /* HTExerciseQuestionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseQuestionHeaderCell.swift; sourceTree = "<group>"; };
+		C29A516321B7EC2C00020351 /* HTExerciseQuestionContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseQuestionContentCell.swift; sourceTree = "<group>"; };
+		C29A516521B7F0E800020351 /* HTExerciseQuestionContentItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseQuestionContentItemCell.swift; sourceTree = "<group>"; };
+		C29BD3B921B68127002CD66A /* HTCourseCircleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseCircleModel.swift; sourceTree = "<group>"; };
+		C29BD3BB21B68205002CD66A /* HTCourseReplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseReplayModel.swift; sourceTree = "<group>"; };
+		C29BD3BD21B68218002CD66A /* HTCourseLiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseLiveModel.swift; sourceTree = "<group>"; };
+		C29BD3BF21B6828C002CD66A /* HTCourseGradeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseGradeModel.swift; sourceTree = "<group>"; };
+		C29BD3C121B682C0002CD66A /* HTCourseStoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseStoryModel.swift; sourceTree = "<group>"; };
+		C29BD3C321B68C0A002CD66A /* HTCourseServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseServiceModel.swift; sourceTree = "<group>"; };
+		C29BD3C521B69A42002CD66A /* HTCourseCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseCircleView.swift; sourceTree = "<group>"; };
+		C29BD3C721B69A55002CD66A /* HTCourseCircleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseCircleCell.swift; sourceTree = "<group>"; };
+		C29BD3C921B69A6C002CD66A /* HTCourseReplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseReplayView.swift; sourceTree = "<group>"; };
+		C29BD3CB21B69A90002CD66A /* HTCourseSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseSectionHeaderView.swift; sourceTree = "<group>"; };
+		C29BD3CD21B69AA3002CD66A /* HTCourseOpenHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseOpenHeaderView.swift; sourceTree = "<group>"; };
+		C29BD3CF21B69AC0002CD66A /* HTCourseReplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseReplayCell.swift; sourceTree = "<group>"; };
+		C29BD3D121B69AF0002CD66A /* HTCourseLiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseLiveCell.swift; sourceTree = "<group>"; };
+		C29BD3D321B69B13002CD66A /* HTCourseLiveFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseLiveFooterView.swift; sourceTree = "<group>"; };
+		C29BD3D521B69B30002CD66A /* HTCourseGradeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseGradeCell.swift; sourceTree = "<group>"; };
+		C29BD3D721B69B44002CD66A /* HTCourseStoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseStoryCell.swift; sourceTree = "<group>"; };
+		C29BD3D921B69B60002CD66A /* HTCourseStoryFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseStoryFooterView.swift; sourceTree = "<group>"; };
+		C2A0127221B507E8006771E2 /* HTQuestionStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTQuestionStoreModel.swift; sourceTree = "<group>"; };
+		C2A0127421B50AED006771E2 /* HTQuestionSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTQuestionSectionModel.swift; sourceTree = "<group>"; };
+		C2A0127621B50B6F006771E2 /* HTQuestionStoreHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTQuestionStoreHeaderView.swift; sourceTree = "<group>"; };
+		C2A0127821B50B7F006771E2 /* HTQuestionStoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTQuestionStoreCell.swift; sourceTree = "<group>"; };
+		C2A0129A21B5490A006771E2 /* HTQuestionNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTQuestionNavigationBar.swift; sourceTree = "<group>"; };
+		C2A0129C21B5632C006771E2 /* HTMineSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineSectionModel.swift; sourceTree = "<group>"; };
+		C2A0129E21B56347006771E2 /* HTMineBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineBannerModel.swift; sourceTree = "<group>"; };
+		C2A012A221B563F1006771E2 /* HTMineRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineRecordModel.swift; sourceTree = "<group>"; };
+		C2A012A421B5650D006771E2 /* HTMineRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineRecordCell.swift; sourceTree = "<group>"; };
+		C2A012A621B58115006771E2 /* HTMineCountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineCountModel.swift; sourceTree = "<group>"; };
+		C2A012A821B58127006771E2 /* HTMineBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineBannerCell.swift; sourceTree = "<group>"; };
+		C2A012AA21B58144006771E2 /* HTMineCountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineCountCell.swift; sourceTree = "<group>"; };
+		C2A012AC21B58169006771E2 /* HTMineUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineUserCell.swift; sourceTree = "<group>"; };
+		C2A012AE21B5826C006771E2 /* HTMineUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineUserModel.swift; sourceTree = "<group>"; };
+		C2A012B021B58318006771E2 /* HTMineCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineCountView.swift; sourceTree = "<group>"; };
+		C2A012B221B58C6E006771E2 /* HTMineUserCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineUserCircleView.swift; sourceTree = "<group>"; };
+		C2A012B421B58CFF006771E2 /* HTMineUserCircleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMineUserCircleModel.swift; sourceTree = "<group>"; };
+		C2A012B821B599E7006771E2 /* HTCourseSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseSectionModel.swift; sourceTree = "<group>"; };
+		C2A012BA21B59A22006771E2 /* HTExerciseSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseSectionModel.swift; sourceTree = "<group>"; };
+		C2A012BC21B59A38006771E2 /* HTExerciseSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseSectionHeaderView.swift; sourceTree = "<group>"; };
+		C2A012C021B59B80006771E2 /* HTCourseNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseNavigationBar.swift; sourceTree = "<group>"; };
+		C2A012C221B59B8E006771E2 /* HTCourseBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseBackgroundView.swift; sourceTree = "<group>"; };
+		C2A012C421B5A024006771E2 /* HTCourseServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseServiceCell.swift; sourceTree = "<group>"; };
+		C2C4FC4521B6373500D1C5E7 /* HTExerciseNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTExerciseNavigationBar.swift; sourceTree = "<group>"; };
+		C2EA196D21B6E1C700033FA7 /* HTCourseGradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTCourseGradeView.swift; sourceTree = "<group>"; };
+		C792CEF3D2F8305BB12D14DB /* Pods-KGMAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KGMAT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KGMAT/Pods-KGMAT.debug.xcconfig"; sourceTree = "<group>"; };
+		EF53A6D3C78B1262A40A94B3 /* Pods_KGMAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KGMAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C299BBEB21B4F41F00D3EA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E05F6B6827DB91AFD5E6835 /* Pods_KGMAT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		870D974283D69F4F929E6581 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C792CEF3D2F8305BB12D14DB /* Pods-KGMAT.debug.xcconfig */,
+				62BA10D51DA473450A06E8BC /* Pods-KGMAT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C21382BD21B4FD0E00FA5414 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2A012C021B59B80006771E2 /* HTCourseNavigationBar.swift */,
+				C2A012C221B59B8E006771E2 /* HTCourseBackgroundView.swift */,
+				C29BD3CB21B69A90002CD66A /* HTCourseSectionHeaderView.swift */,
+				C29BD3CD21B69AA3002CD66A /* HTCourseOpenHeaderView.swift */,
+				C29BD3C521B69A42002CD66A /* HTCourseCircleView.swift */,
+				C29BD3C721B69A55002CD66A /* HTCourseCircleCell.swift */,
+				C29BD3C921B69A6C002CD66A /* HTCourseReplayView.swift */,
+				C29BD3CF21B69AC0002CD66A /* HTCourseReplayCell.swift */,
+				C29BD3D121B69AF0002CD66A /* HTCourseLiveCell.swift */,
+				C29BD3D321B69B13002CD66A /* HTCourseLiveFooterView.swift */,
+				C2EA196D21B6E1C700033FA7 /* HTCourseGradeView.swift */,
+				C29BD3D521B69B30002CD66A /* HTCourseGradeCell.swift */,
+				C29BD3D721B69B44002CD66A /* HTCourseStoryCell.swift */,
+				C29BD3D921B69B60002CD66A /* HTCourseStoryFooterView.swift */,
+				C2A012C421B5A024006771E2 /* HTCourseServiceCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C21382BE21B4FD1400FA5414 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2A012B821B599E7006771E2 /* HTCourseSectionModel.swift */,
+				C29BD3B921B68127002CD66A /* HTCourseCircleModel.swift */,
+				C29BD3BB21B68205002CD66A /* HTCourseReplayModel.swift */,
+				C29BD3BD21B68218002CD66A /* HTCourseLiveModel.swift */,
+				C29BD3BF21B6828C002CD66A /* HTCourseGradeModel.swift */,
+				C29BD3C121B682C0002CD66A /* HTCourseStoryModel.swift */,
+				C29BD3C321B68C0A002CD66A /* HTCourseServiceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C21382BF21B4FD1700FA5414 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C21382C921B4FD5700FA5414 /* HTCourseController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C21382C021B4FD1E00FA5414 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2A0129A21B5490A006771E2 /* HTQuestionNavigationBar.swift */,
+				C2A0127621B50B6F006771E2 /* HTQuestionStoreHeaderView.swift */,
+				C2A0127821B50B7F006771E2 /* HTQuestionStoreCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C21382C121B4FD2200FA5414 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2A0127421B50AED006771E2 /* HTQuestionSectionModel.swift */,
+				C2A0127221B507E8006771E2 /* HTQuestionStoreModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C21382C221B4FD2600FA5414 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C21382CB21B4FD6100FA5414 /* HTQuestionController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C21382C321B4FD2E00FA5414 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2C4FC4521B6373500D1C5E7 /* HTExerciseNavigationBar.swift */,
+				C29A515321B7D3B100020351 /* HTExerciseBackgroundView.swift */,
+				C29A514921B7D07200020351 /* HTExerciseCountCell.swift */,
+				C2A012BC21B59A38006771E2 /* HTExerciseSectionHeaderView.swift */,
+				C29A515721B7D83F00020351 /* HTExerciseHardCell.swift */,
+				C29A515921B7D84C00020351 /* HTExerciseGuideCell.swift */,
+				C29A515B21B7E46900020351 /* HTExerciseSignButton.swift */,
+				C29A515521B7D82200020351 /* HTExerciseQuestionCell.swift */,
+				C29A516121B7EC1C00020351 /* HTExerciseQuestionHeaderCell.swift */,
+				C29A516321B7EC2C00020351 /* HTExerciseQuestionContentCell.swift */,
+				C29A516521B7F0E800020351 /* HTExerciseQuestionContentItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C21382C421B4FD3200FA5414 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2A012BA21B59A22006771E2 /* HTExerciseSectionModel.swift */,
+				C29A514B21B7D09200020351 /* HTExerciseCountModel.swift */,
+				C29A514D21B7D0C200020351 /* HTExerciseQuestionModel.swift */,
+				C25E24A021B81F69007EABE8 /* HTExerciseQuestionPageModel.swift */,
+				C25E24A221B81F77007EABE8 /* HTExerciseQuestionItemModel.swift */,
+				C29A514F21B7D0F900020351 /* HTExerciseHardModel.swift */,
+				C29A515121B7D11200020351 /* HTExerciseGuideModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C21382C521B4FD3600FA5414 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C21382CD21B4FD6A00FA5414 /* HTExerciseController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C21382C621B4FD3C00FA5414 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2A012AC21B58169006771E2 /* HTMineUserCell.swift */,
+				C2A012B221B58C6E006771E2 /* HTMineUserCircleView.swift */,
+				C2A012AA21B58144006771E2 /* HTMineCountCell.swift */,
+				C2A012B021B58318006771E2 /* HTMineCountView.swift */,
+				C2A012A821B58127006771E2 /* HTMineBannerCell.swift */,
+				C2A012A421B5650D006771E2 /* HTMineRecordCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C21382C721B4FD4000FA5414 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2A0129C21B5632C006771E2 /* HTMineSectionModel.swift */,
+				C2A012AE21B5826C006771E2 /* HTMineUserModel.swift */,
+				C2A012B421B58CFF006771E2 /* HTMineUserCircleModel.swift */,
+				C2A012A621B58115006771E2 /* HTMineCountModel.swift */,
+				C2A0129E21B56347006771E2 /* HTMineBannerModel.swift */,
+				C2A012A221B563F1006771E2 /* HTMineRecordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C21382C821B4FD4300FA5414 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C21382CF21B4FD7100FA5414 /* HTMineController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C299BBE521B4F41F00D3EA45 = {
+			isa = PBXGroup;
+			children = (
+				C299BBF021B4F41F00D3EA45 /* KGMAT */,
+				C299BBEF21B4F41F00D3EA45 /* Products */,
+				870D974283D69F4F929E6581 /* Pods */,
+				F017E5CE80710520D87FC270 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C299BBEF21B4F41F00D3EA45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C299BBEE21B4F41F00D3EA45 /* KGMAT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C299BBF021B4F41F00D3EA45 /* KGMAT */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC0921B4F58C00D3EA45 /* Main */,
+				C299BC1221B4F58C00D3EA45 /* Common */,
+				C299BC2021B4F58C00D3EA45 /* Resource */,
+			);
+			path = KGMAT;
+			sourceTree = "<group>";
+		};
+		C299BC0921B4F58C00D3EA45 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC0E21B4F58C00D3EA45 /* Exercise */,
+				C299BC0A21B4F58C00D3EA45 /* Course */,
+				C299BC0C21B4F58C00D3EA45 /* Question */,
+				C299BC1021B4F58C00D3EA45 /* Mine */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C299BC0A21B4F58C00D3EA45 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC0B21B4F58C00D3EA45 /* Common */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		C299BC0B21B4F58C00D3EA45 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C21382BF21B4FD1700FA5414 /* Controller */,
+				C21382BE21B4FD1400FA5414 /* Model */,
+				C21382BD21B4FD0E00FA5414 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C299BC0C21B4F58C00D3EA45 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC0D21B4F58C00D3EA45 /* Common */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		C299BC0D21B4F58C00D3EA45 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C21382C221B4FD2600FA5414 /* Controller */,
+				C21382C121B4FD2200FA5414 /* Model */,
+				C21382C021B4FD1E00FA5414 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C299BC0E21B4F58C00D3EA45 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC0F21B4F58C00D3EA45 /* Common */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		C299BC0F21B4F58C00D3EA45 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C21382C521B4FD3600FA5414 /* Controller */,
+				C21382C421B4FD3200FA5414 /* Model */,
+				C21382C321B4FD2E00FA5414 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C299BC1021B4F58C00D3EA45 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC1121B4F58C00D3EA45 /* Common */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		C299BC1121B4F58C00D3EA45 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C21382C821B4FD4300FA5414 /* Controller */,
+				C21382C721B4FD4000FA5414 /* Model */,
+				C21382C621B4FD3C00FA5414 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C299BC1221B4F58C00D3EA45 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC1321B4F58C00D3EA45 /* Navigation */,
+				C299BC1621B4F58C00D3EA45 /* Tabbar */,
+				C299BC1B21B4F58C00D3EA45 /* HTStatic */,
+				C299BC1D21B4F58C00D3EA45 /* Appdelegate */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C299BC1321B4F58C00D3EA45 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC1421B4F58C00D3EA45 /* Controller */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C299BC1421B4F58C00D3EA45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC1521B4F58C00D3EA45 /* HTNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C299BC1621B4F58C00D3EA45 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC1721B4F58C00D3EA45 /* Controller */,
+				C299BC1921B4F58C00D3EA45 /* Model */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		C299BC1721B4F58C00D3EA45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC1821B4F58C00D3EA45 /* HTTabbarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C299BC1921B4F58C00D3EA45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC1A21B4F58C00D3EA45 /* HTTabbarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C299BC1B21B4F58C00D3EA45 /* HTStatic */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC1C21B4F58C00D3EA45 /* HTStatic.swift */,
+			);
+			path = HTStatic;
+			sourceTree = "<group>";
+		};
+		C299BC1D21B4F58C00D3EA45 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC1E21B4F58C00D3EA45 /* Appdelegate+Register.swift */,
+				C299BC1F21B4F58C00D3EA45 /* Appdelegate.swift */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		C299BC2021B4F58C00D3EA45 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C299BC2121B4F58C00D3EA45 /* Assets.xcassets */,
+				C299BC2521B4F58C00D3EA45 /* Info.plist */,
+				C299BC2421B4F58C00D3EA45 /* KGMAT-Bridging-Header.h */,
+				C299BC2221B4F58C00D3EA45 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F017E5CE80710520D87FC270 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF53A6D3C78B1262A40A94B3 /* Pods_KGMAT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C299BBED21B4F41F00D3EA45 /* KGMAT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C299BC0021B4F42000D3EA45 /* Build configuration list for PBXNativeTarget "KGMAT" */;
+			buildPhases = (
+				4EEC5355EDA8ABE23968E698 /* [CP] Check Pods Manifest.lock */,
+				C299BBEA21B4F41F00D3EA45 /* Sources */,
+				C299BBEB21B4F41F00D3EA45 /* Frameworks */,
+				C299BBEC21B4F41F00D3EA45 /* Resources */,
+				6CF3CC3983E9F34B64A9A33C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KGMAT;
+			productName = KGMAT;
+			productReference = C299BBEE21B4F41F00D3EA45 /* KGMAT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C299BBE621B4F41F00D3EA45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = hublot;
+				TargetAttributes = {
+					C299BBED21B4F41F00D3EA45 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = C299BBE921B4F41F00D3EA45 /* Build configuration list for PBXProject "KGMAT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C299BBE521B4F41F00D3EA45;
+			productRefGroup = C299BBEF21B4F41F00D3EA45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C299BBED21B4F41F00D3EA45 /* KGMAT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C299BBEC21B4F41F00D3EA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C299BC2C21B4F58C00D3EA45 /* Assets.xcassets in Resources */,
+				C299BC2D21B4F58C00D3EA45 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EEC5355EDA8ABE23968E698 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KGMAT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CF3CC3983E9F34B64A9A33C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KGMAT/Pods-KGMAT-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HTButton/HTButton.framework",
+				"${BUILT_PRODUCTS_DIR}/HTScrollPageView/HTScrollPageView.framework",
+				"${BUILT_PRODUCTS_DIR}/HTSwift/HTSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RTRootNavigationController/RTRootNavigationController.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTScrollPageView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTRootNavigationController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KGMAT/Pods-KGMAT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C299BBEA21B4F41F00D3EA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C299BC2621B4F58C00D3EA45 /* HTNavigationController.swift in Sources */,
+				C299BC2A21B4F58C00D3EA45 /* Appdelegate+Register.swift in Sources */,
+				C29A515A21B7D84C00020351 /* HTExerciseGuideCell.swift in Sources */,
+				C29BD3C821B69A55002CD66A /* HTCourseCircleCell.swift in Sources */,
+				C29BD3C621B69A42002CD66A /* HTCourseCircleView.swift in Sources */,
+				C2A012AD21B58169006771E2 /* HTMineUserCell.swift in Sources */,
+				C2A0127321B507E8006771E2 /* HTQuestionStoreModel.swift in Sources */,
+				C299BC2921B4F58C00D3EA45 /* HTStatic.swift in Sources */,
+				C29BD3BA21B68127002CD66A /* HTCourseCircleModel.swift in Sources */,
+				C2A012BD21B59A38006771E2 /* HTExerciseSectionHeaderView.swift in Sources */,
+				C29BD3D021B69AC0002CD66A /* HTCourseReplayCell.swift in Sources */,
+				C29BD3BC21B68205002CD66A /* HTCourseReplayModel.swift in Sources */,
+				C21382CA21B4FD5700FA5414 /* HTCourseController.swift in Sources */,
+				C29BD3D821B69B44002CD66A /* HTCourseStoryCell.swift in Sources */,
+				C29A516621B7F0E800020351 /* HTExerciseQuestionContentItemCell.swift in Sources */,
+				C2A012C121B59B80006771E2 /* HTCourseNavigationBar.swift in Sources */,
+				C29A515821B7D83F00020351 /* HTExerciseHardCell.swift in Sources */,
+				C2A0127721B50B6F006771E2 /* HTQuestionStoreHeaderView.swift in Sources */,
+				C29BD3D421B69B13002CD66A /* HTCourseLiveFooterView.swift in Sources */,
+				C29A516221B7EC1C00020351 /* HTExerciseQuestionHeaderCell.swift in Sources */,
+				C299BC2721B4F58C00D3EA45 /* HTTabbarController.swift in Sources */,
+				C2A0127921B50B7F006771E2 /* HTQuestionStoreCell.swift in Sources */,
+				C29BD3C221B682C0002CD66A /* HTCourseStoryModel.swift in Sources */,
+				C29BD3CC21B69A90002CD66A /* HTCourseSectionHeaderView.swift in Sources */,
+				C2A0129B21B5490A006771E2 /* HTQuestionNavigationBar.swift in Sources */,
+				C29A515621B7D82200020351 /* HTExerciseQuestionCell.swift in Sources */,
+				C21382CC21B4FD6100FA5414 /* HTQuestionController.swift in Sources */,
+				C2C4FC4621B6373500D1C5E7 /* HTExerciseNavigationBar.swift in Sources */,
+				C299BC2B21B4F58C00D3EA45 /* Appdelegate.swift in Sources */,
+				C2A012B321B58C6E006771E2 /* HTMineUserCircleView.swift in Sources */,
+				C29BD3C021B6828C002CD66A /* HTCourseGradeModel.swift in Sources */,
+				C29A515421B7D3B100020351 /* HTExerciseBackgroundView.swift in Sources */,
+				C29A514A21B7D07200020351 /* HTExerciseCountCell.swift in Sources */,
+				C299BC2821B4F58C00D3EA45 /* HTTabbarModel.swift in Sources */,
+				C29BD3DA21B69B60002CD66A /* HTCourseStoryFooterView.swift in Sources */,
+				C2A012B521B58CFF006771E2 /* HTMineUserCircleModel.swift in Sources */,
+				C29A514E21B7D0C200020351 /* HTExerciseQuestionModel.swift in Sources */,
+				C2A012AF21B5826C006771E2 /* HTMineUserModel.swift in Sources */,
+				C29A514C21B7D09200020351 /* HTExerciseCountModel.swift in Sources */,
+				C29BD3D621B69B30002CD66A /* HTCourseGradeCell.swift in Sources */,
+				C29BD3BE21B68218002CD66A /* HTCourseLiveModel.swift in Sources */,
+				C2A012C321B59B8E006771E2 /* HTCourseBackgroundView.swift in Sources */,
+				C25E24A121B81F69007EABE8 /* HTExerciseQuestionPageModel.swift in Sources */,
+				C2A0127521B50AED006771E2 /* HTQuestionSectionModel.swift in Sources */,
+				C2A012C521B5A024006771E2 /* HTCourseServiceCell.swift in Sources */,
+				C21382D021B4FD7100FA5414 /* HTMineController.swift in Sources */,
+				C29BD3CE21B69AA3002CD66A /* HTCourseOpenHeaderView.swift in Sources */,
+				C29A516421B7EC2C00020351 /* HTExerciseQuestionContentCell.swift in Sources */,
+				C29A515C21B7E46900020351 /* HTExerciseSignButton.swift in Sources */,
+				C2EA196E21B6E1C700033FA7 /* HTCourseGradeView.swift in Sources */,
+				C2A0129D21B5632C006771E2 /* HTMineSectionModel.swift in Sources */,
+				C2A012A321B563F1006771E2 /* HTMineRecordModel.swift in Sources */,
+				C2A012A721B58115006771E2 /* HTMineCountModel.swift in Sources */,
+				C2A012A921B58127006771E2 /* HTMineBannerCell.swift in Sources */,
+				C2A012B121B58318006771E2 /* HTMineCountView.swift in Sources */,
+				C2A0129F21B56347006771E2 /* HTMineBannerModel.swift in Sources */,
+				C2A012BB21B59A22006771E2 /* HTExerciseSectionModel.swift in Sources */,
+				C29A515021B7D0F900020351 /* HTExerciseHardModel.swift in Sources */,
+				C29A515221B7D11200020351 /* HTExerciseGuideModel.swift in Sources */,
+				C2A012B921B599E7006771E2 /* HTCourseSectionModel.swift in Sources */,
+				C25E24A321B81F77007EABE8 /* HTExerciseQuestionItemModel.swift in Sources */,
+				C29BD3D221B69AF0002CD66A /* HTCourseLiveCell.swift in Sources */,
+				C29BD3C421B68C0A002CD66A /* HTCourseServiceModel.swift in Sources */,
+				C21382CE21B4FD6A00FA5414 /* HTExerciseController.swift in Sources */,
+				C2A012AB21B58144006771E2 /* HTMineCountCell.swift in Sources */,
+				C2A012A521B5650D006771E2 /* HTMineRecordCell.swift in Sources */,
+				C29BD3CA21B69A6C002CD66A /* HTCourseReplayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C299BC2221B4F58C00D3EA45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C299BC2321B4F58C00D3EA45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C299BBFE21B4F42000D3EA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C299BBFF21B4F42000D3EA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C299BC0121B4F42000D3EA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C792CEF3D2F8305BB12D14DB /* Pods-KGMAT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26KPQ868WL;
+				INFOPLIST_FILE = KGMAT/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hublot.KGMAT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KGMAT/Resource/KGMAT-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C299BC0221B4F42000D3EA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BA10D51DA473450A06E8BC /* Pods-KGMAT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26KPQ868WL;
+				INFOPLIST_FILE = KGMAT/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hublot.KGMAT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KGMAT/Resource/KGMAT-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C299BBE921B4F41F00D3EA45 /* Build configuration list for PBXProject "KGMAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C299BBFE21B4F42000D3EA45 /* Debug */,
+				C299BBFF21B4F42000D3EA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C299BC0021B4F42000D3EA45 /* Build configuration list for PBXNativeTarget "KGMAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C299BC0121B4F42000D3EA45 /* Debug */,
+				C299BC0221B4F42000D3EA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C299BBE621B4F41F00D3EA45 /* Project object */;
+}

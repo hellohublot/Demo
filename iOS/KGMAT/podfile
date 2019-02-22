@@ -1,0 +1,29 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'KGMAT' do
+	pod 'SnapKit'
+#	pod 'Kingfisher'
+#	pod 'MJExtension'
+#	pod 'SVProgressHUD'
+#	pod 'IQKeyboardManager'
+	pod 'RTRootNavigationController'
+#	pod 'TZImagePickerController'
+#	pod 'Bugly'
+    
+#    pod 'VTMagic', :path => '../Common/VTMagic'
+	
+	pod 'HTSwift', :path => '../Common/HTSwift'
+	pod 'HTButton', :path => '../Common/HTButton'
+	pod 'HTScrollPageView', :path => '../Common/HTScrollPageView'
+#	pod 'HTActionSheet', :path => '../Common/HTActionSheet'
+#	pod 'HTMaskView', :path => '../Common/HTMaskView'
+#	pod 'HTItunes', :path => '../Common/HTItunes'
+#	pod 'HTSwiftRefresh', :path => '../Common/HTSwiftRefresh'
+#	pod 'HTSwiftNetwork', :path => '../Common/HTSwiftNetwork'
+#	pod 'HTSwiftPlaceholder', :path => '../Common/HTSwiftPlaceholder'
+#	pod 'HTImageBrowserView', :path => '../Common/HTImageBrowserView'
+#	pod 'HTActionSheet', :path => '../Common/HTActionSheet'
+#	pod 'HTFPSLabel', :path => '../Common/HTFPSLabel'
+end
+

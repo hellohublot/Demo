@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'HTSwiftRefresh_Example' do
+	pod 'HTSwift', :path => '../../HTSwift/'
+  	pod 'HTSwiftRefresh', :path => '../'
+end

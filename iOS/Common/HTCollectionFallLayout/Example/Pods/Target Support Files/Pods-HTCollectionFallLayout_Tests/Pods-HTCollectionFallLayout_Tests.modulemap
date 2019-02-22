@@ -1,0 +1,6 @@
+framework module Pods_HTCollectionFallLayout_Tests {
+  umbrella header "Pods-HTCollectionFallLayout_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

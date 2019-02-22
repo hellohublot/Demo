@@ -1,0 +1,11 @@
+<block wx:for="{{shop}}" wx:key="">
+    <view bindtap='selectedItem' class="cell {{item.type == 1 ? 'red' : 'blue'}}">
+        <image mode='aspectFill' src="{{item.type == 1 ? '/resource/images/shop_1.png' : '/resource/images/shop_add.png'}}"></image>
+        <text>{{item.name}}</text>
+    </view>
+</block>
+
+<view bindtap='selectedHelp' class="helpview">
+	<van-icon custom-class="image" name="question"/>
+	<text class="text">小电库使用指南</text>
+</view>
