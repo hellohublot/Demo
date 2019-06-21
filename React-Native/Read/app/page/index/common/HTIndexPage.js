@@ -208,6 +208,8 @@ const styleList = StyleSheet.create({
 		color: '#000',
 		marginTop: 40,
 		textAlign: 'center',
+		paddingLeft: 20,
+		paddingRight: 20,
 	},
 	itemDetailContainer: {
 		flex: 1,

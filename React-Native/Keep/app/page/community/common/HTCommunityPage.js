@@ -25,12 +25,15 @@ export default class HTCommunityPage extends Component {
 		.then((response) => response.json())
 		.then((response) => {
 			let itemList = response.data.items
+			itemList = itemList.filter((item, index) => {
+				return item.entry != null
+			})
 			itemList.map((item) => {
 				item.height = Math.random() * 150 + 250
 				return item
 			})
 			if (!headerRefresh) {
-				itemList = this.state.list.concat(itemList)	
+				itemList = this.state.list.concat(itemList)
 			}
 			this.fallList.endRefresh()
 			this.fallList.endLoading()
@@ -46,17 +49,18 @@ export default class HTCommunityPage extends Component {
 	}
 
 	_renderItem = (item, index) => {
-		const [ first, ...otherList ] = item.entry.images
+		let entry = item.entry || {}
+		const [ first, ...otherList ] = entry?.images
 		return (
 			<View style={styleList.itemContainer}>
 				<View style={styleList.itemContent}>
 					<Image style={styleList.itemImage} source={{uri: first}} />
-					<Text numberOfLines={2} style={styleList.itemTitle}>{item.entry.content}</Text>
+					<Text numberOfLines={2} style={styleList.itemTitle}>{entry?.content}</Text>
 					<View style={styleList.itemUserContainer}>
-						<Image style={styleList.itemUserImage} source={{uri: item.entry.author?.avatar}} />
-						<Text style={styleList.itemUserTitle}>{item.entry.author?.username}</Text>
+						<Image style={styleList.itemUserImage} source={{uri: entry?.author?.avatar}} />
+						<Text style={styleList.itemUserTitle}>{entry?.author?.username}</Text>
 						<View style={CONTAINER}></View>
-						<Text style={styleList.itemLikeTitle}>{item.entry.likes}</Text>
+						<Text style={styleList.itemLikeTitle}>{entry?.likes}</Text>
 					</View>
 				</View>
 			</View>
